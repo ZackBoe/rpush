@@ -1,0 +1,112 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+
+<!-- 
+  Based on MDL's Blog Template: https://github.com/google/material-design-lite/tree/master/templates/blog
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Push for Reddit &middot; by Zack Boehm</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.blue_grey-blue.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout has-drawer is-upgraded">
+      <main class="mdl-layout__content">
+        <div class="mdl-grid">
+
+          <div class="mdl-card info mdl-cell mdl-shadow--2dp mdl-cell--8-col">
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text"><a href="https://github.com/zackboe/rpush">Push for Reddit</a></h2>
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+              <div>
+                <p>Push for Reddit allows near real-time updates from any subreddit to dedicated Pushbullet Channels.
+                Inspired by and using <a href="https://github.com/rtheunissen">@rtheunissen's</a> <a href="https://github.com/rtheunissen/rockets">Rockets</a></p>
+                <p>A quick project by <a href="http://zackboe.hm">Zack Boehm</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mdl-card add-subreddit mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
+            <button class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent">
+              <i class="material-icons mdl-color-text--white" role="presentation">add</i>
+              <span class="visuallyhidden">add</span>
+            </button>
+            <div class="mdl-card__media mdl-color--white mdl-color-text--grey-600">
+              <img src="images/PushbulletLogo.png">
+              Powering <span class="channel-count">Some</span> Channels
+            </div>
+            <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
+              <div>
+                <p>Submit a Pull Request for a channel and get updates from any sub!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mdl-card loading mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__title">
+              <h4 class="mdl-card__title-text loading-text">Loading Channels</h4>
+            </div>
+            <div id="p2" class="mdl-progress loading-bar mdl-js-progress mdl-progress__indeterminate"></div>
+          </div>
+
+        </div>
+      </main>
+      <div class="mdl-layout__obfuscator"></div>
+    </div>
+    <a href="#" target="_blank" class="fork mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">Fork on Github</a>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+    <script type="text/javascript">(function(){var a=document.createElement('script');a.type='text/javascript';a.async=true;a.src='https://widget.pushbullet.com/embed.js';var b=document.getElementsByTagName('script')[0];b.parentNode.insertBefore(a,b);})();</script>
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+
+
+  </body>
+</html>
