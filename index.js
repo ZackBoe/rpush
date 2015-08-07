@@ -2,18 +2,13 @@ var chalk = require('chalk');
 var pushbullet = require('pushbullet');
 var rockets = require('rockets');
 var secrets = require('./secrets.json');
+var subs = require('./subreddits.json');
 
 var error = chalk.bold.red;
 var info = chalk.dim.blue;
 
 var pusher = new pushbullet(secrets.pushbulletAPI);
 var client = new rockets();
-
-var subs = {
-  'GameDeals': 'rpush-gamedeals',
-  'freebies': 'rpush-freebies',
-  'AppHookup': 'rpush-apphookup'
-};
 
 // Register events on the client.
 client.on('connect', function() {
