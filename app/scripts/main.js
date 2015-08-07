@@ -20,7 +20,7 @@ function error() {
 
 function getSubs() {
   var request = new XMLHttpRequest();
-  request.open('GET', '/subs.json', true);
+  request.open('GET', 'https://cdn.rawgit.com/ZackBoe/rpush/master/subreddits.json', true);
 
   request.onload = function() {
     if (this.status >= 200 && this.status < 400) {
@@ -33,6 +33,7 @@ function getSubs() {
         count++;
       }
       
+      (function(){var a=document.createElement('script');a.type='text/javascript';a.async=true;a.src='https://widget.pushbullet.com/embed.js';var b=document.getElementsByTagName('script')[0];b.parentNode.insertBefore(a,b);})();
       document.querySelectorAll('.channel-count')[0].innerHTML = count;
       document.querySelectorAll('.loading')[0].remove();
 
