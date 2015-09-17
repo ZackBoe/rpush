@@ -39,6 +39,7 @@ client.on('post', function(post) {
 
 client.on('disconnect', function(){ 
   console.log(info('['+new Date(Date.now()).toTimeString().split(' ')[0]+'] ')+chalk.bgRed.black(' Disconnected ')); 
+  process.exit(1);
 });
 
 client.connect();
